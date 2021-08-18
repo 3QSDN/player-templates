@@ -4,24 +4,28 @@
 body {
   margin: 0;
   font: 500 100% system-ui, sans-serif;
+  background: #ccc;
+  color: #333;
 }
 
 h1 {
   text-align: center;
   margin-top: 3rem;
   text-transform: uppercase;
+  text-shadow: 0 0 4px #4448;
 }
 
-section {
+.card {
   padding: 1rem 1rem 2rem;
   max-width: 50rem;
   margin: 3rem auto;
   background: #abc;
-  color: #efefef;
+  color: #ddd;
+  text-shadow: 0 0 4px #4448;
   border-radius: 0.5rem;
   position: relative;
 }
-section:before, section:after {
+.card:before, .card:after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -31,20 +35,10 @@ section:before, section:after {
   top: 80%;
   max-width: 300px;
   background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-section:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
+.card:after {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
