@@ -12,7 +12,7 @@
     }
 
     .current {
-      background: $cAccent;
+      background: $cTint;
       color: #ddd;
 
       [class^='sdnicbsun-'],
@@ -28,6 +28,17 @@
   .sdn-playlist-description {
     flex-grow: 1;
     display: flex;
+    gap: 0.5rem;
     align-items: center;
+  }
+
+  /* The Podcast Title needs a better class */
+  > *:first-child {
+    display: block;
+    color: $cTint;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
   }
 }

@@ -2,6 +2,13 @@
   display: flex;
   align-items: center;
 
+  [class^='sdnicbsun-'],
+  [class*='sdnicbsun-'] {
+    &::before {
+      font-size: 2rem;
+    }
+  }
+
   [data-role='seek-bar'] {
     flex-grow: 1;
   }

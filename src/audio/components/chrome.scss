@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: row-reverse;
 
-  .sdn-button-right {
-    vertical-align: middle;
+  .sdn-playlist-label {
+    color: $cTint;
+    font-weight: 700;
+
+    i {
+      font-weight: normal;
+      vertical-align: middle;
+    }
   }
 }

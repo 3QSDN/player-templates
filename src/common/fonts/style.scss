@@ -7,6 +7,7 @@
     url('../common/fonts/sdnicbsun.svg#sdnicbsun') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,8 +77,8 @@
   content: '\e93e';
 }
 .sdnicbsun-playlist-open:before {
-  content: '\e972';
+  content: '\e973';
 }
 .sdnicbsun-playlist-closed:before {
-  content: '\e973';
+  content: '\e972';
 }
