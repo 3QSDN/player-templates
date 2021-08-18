@@ -1,0 +1,45 @@
+<js3q-container data-role="sdn-audio-player">
+  <js3q-container data-role="sdn-display" class="sdn-display sdn-display-audio">
+    <js3q-container data-role="sdn-stats"></js3q-container>
+    <js3q-container data-role="motion-poster"></js3q-container>
+    <js3q-container data-role="sdn-wall"></js3q-container>
+    <js3q-container data-role="display-ad"></js3q-container>
+    <js3q-button data-role="adskip-button">
+      {{skip}}
+    </js3q-button>
+    <js3q-button data-role="sdn-unmute-button"></js3q-button>
+
+    [[context]]
+
+    <js3q-container data-role="channel-label"></js3q-container>
+    <js3q-container data-role="title"></js3q-container>
+
+    <video data-role="source-container" class="sdn-source-element sdn-hidden" x-webkit-airplay="allow"
+      webkit-playsinline="true" playsinline="true" src=""></video>
+
+    <js3q-container data-role="player-controls">
+      [[seekbar]]
+      [[audioControls]]
+    </js3q-container>
+
+    [[qosmenu]]
+
+    <js3q-container data-role="top-chrome">
+      <js3q-container data-role="share-menu">
+        <js3q-container data-role="sidebar-button"></js3q-container>
+      </js3q-container>
+    </js3q-container>
+
+    <js3q-container data-role="sidebar"></js3q-container>
+
+
+    [[infobar]]
+
+    <js3q-container data-role="audio-poster" class="sdn-audio-poster">
+      <img data-role="audio-poster-image" class="sdn-audio-poster-image" onerror="this.style.display='none'"
+        onload="this.style.display='block'">
+    </js3q-container>
+
+    <js3q-container data-role="playlist"></js3q-container>
+  </js3q-container>
+</js3q-container>
