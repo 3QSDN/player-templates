@@ -11,12 +11,13 @@ h1 {
   text-transform: uppercase;
 }
 
-section {
+.card {
   padding: 1rem 1rem 2rem;
   max-width: 50rem;
   margin: 3rem auto;
   background: #abc;
-  color: #efefef;
+  color: #ddd;
+  text-shadow: 0 0 4px #4448;
   border-radius: 0.5rem;
   position: relative;
 
