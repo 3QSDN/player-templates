@@ -13,6 +13,7 @@
   src: url(../fonts/2c4647aea95450ec69d3.eot?#iefix) format("embedded-opentype"), url(../fonts/de1bea8bbbbf74b96d73.woff) format("woff"), url(../fonts/a12c5afd4edb843d3edc.ttf) format("truetype"), url(../fonts/1e6c6c7dcd0977e29e1f.svg#sdnicbsun) format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -95,11 +96,11 @@
 }
 
 .sdnicbsun-playlist-open:before {
-  content: "\e972";
+  content: "\e973";
 }
 
 .sdnicbsun-playlist-closed:before {
-  content: "\e973";
+  content: "\e972";
 }
 
 @font-face {
@@ -114,7 +115,9 @@
 [class^=sdnicbsun-]::before,
 [class*=sdnicbsun-]::before {
   color: #55606e;
+  font-size: 32px;
   opacity: 0.65;
+  transition: opacity 0.3s;
 }
 [class^=sdnicbsun-]:hover::before,
 [class*=sdnicbsun-]:hover::before {
@@ -148,6 +151,10 @@
   display: flex;
   align-items: center;
 }
+.sdn-display [data-role=player-controls] [class^=sdnicbsun-]::before,
+.sdn-display [data-role=player-controls] [class*=sdnicbsun-]::before {
+  font-size: 2rem;
+}
 .sdn-display [data-role=player-controls] [data-role=seek-bar] {
   flex-grow: 1;
 }
@@ -155,8 +162,16 @@
   display: flex;
   flex-direction: row-reverse;
 }
-.sdn-display [data-role=chrome] .sdn-button-right {
+.sdn-display [data-role=chrome] .sdn-playlist-label {
+  color: var(--tint-color, #d534c8);
+  font-weight: 700;
+}
+.sdn-display [data-role=chrome] .sdn-playlist-label i {
+  font-weight: normal;
   vertical-align: middle;
+}
+.sdn-display [data-role=playlist] {
+  /* The Podcast Title needs a better class */
 }
 .sdn-display [data-role=playlist] .sdn-playlist-ul {
   display: flex;
@@ -170,7 +185,7 @@
   border-radius: 0.25rem;
 }
 .sdn-display [data-role=playlist] .sdn-playlist-ul .current {
-  background: #00386c;
+  background: var(--tint-color, #d534c8);
   color: #ddd;
 }
 .sdn-display [data-role=playlist] .sdn-playlist-ul .current [class^=sdnicbsun-]::before,
@@ -181,7 +196,16 @@
 .sdn-display [data-role=playlist] .sdn-playlist-description {
   flex-grow: 1;
   display: flex;
+  gap: 0.5rem;
   align-items: center;
+}
+.sdn-display [data-role=playlist] > *:first-child {
+  display: block;
+  color: var(--tint-color, #d534c8);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
 }
 
 #audio-player-timeleft-span {
