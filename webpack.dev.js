@@ -11,7 +11,6 @@ module.exports = merge(defaultConfig, {
   devServer: {
     publicPath: '/',
     contentBase: [
-      './dist',
       './demo'
     ],
     index: 'index.html'
