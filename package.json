@@ -1,0 +1,32 @@
+{
+  "name": "player-templates",
+  "version": "1.0.0",
+  "description": "Player templates for https://3q.video",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3QSDN/player-templates.git"
+  },
+  "author": "3Q GmbH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3QSDN/player-templates/issues"
+  },
+  "homepage": "https://github.com/3QSDN/player-templates#readme",
+  "dependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.50.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
