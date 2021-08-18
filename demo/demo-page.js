@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/video/template.scss":
-/*!*********************************!*\
-  !*** ./src/video/template.scss ***!
-  \*********************************/
+/***/ "./src/demo-page/style.scss":
+/*!**********************************!*\
+  !*** ./src/demo-page/style.scss ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://player-templates/./src/video/template.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://player-templates/./src/demo-page/style.scss?");
 
 /***/ }),
 
-/***/ "./src/video/index.js":
-/*!****************************!*\
-  !*** ./src/video/index.js ***!
-  \****************************/
+/***/ "./src/demo-page/index.js":
+/*!********************************!*\
+  !*** ./src/demo-page/index.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _template_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./template.scss */ \"./src/video/template.scss\");\nconsole.log('ignore me')\n\n;\n\n\n//# sourceURL=webpack://player-templates/./src/video/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/demo-page/style.scss\");\n\n\n//# sourceURL=webpack://player-templates/./src/demo-page/index.js?");
 
 /***/ })
 
@@ -73,7 +73,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tem
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/video/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/demo-page/index.js");
 /******/ 	
 /******/ })()
 ;

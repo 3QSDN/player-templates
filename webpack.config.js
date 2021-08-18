@@ -3,13 +3,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     audio: './src/audio',
-    video: './src/video'
+    video: './src/video',
+    'demo-page': './src/demo-page'
   },
   target: 'web',
   output: {
+    clean: true,
     path: path.resolve(__dirname, 'demo'),
   },
   plugins: [

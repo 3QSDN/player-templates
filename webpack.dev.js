@@ -4,15 +4,13 @@ const defaultConfig = require('./webpack.config')
 
 module.exports = merge(defaultConfig, {
   mode: 'development',
-  entry: './demo',
-  output: {
-    publicPath: './demo'
-  },
+  devtool: 'source-map',
+  entry: [
+    './src',
+    './src/demo-page',
+  ],
   devServer: {
-    publicPath: '/',
-    contentBase: [
-      './demo'
-    ],
-    index: 'index.html'
+    contentBase: './demo',
+    index: 'demo-page/index.html',
   }
 })

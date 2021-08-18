@@ -1,1 +1,10 @@
-*,*::before,*::after{box-sizing:border-box}
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/video/template.scss ***!
+  \******************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*todo: define styles*/
