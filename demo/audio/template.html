@@ -1,45 +1,68 @@
-<js3q-container data-role="sdn-audio-player">
-  <js3q-container data-role="sdn-display" class="sdn-display sdn-display-audio">
-    <js3q-container data-role="sdn-stats"></js3q-container>
-    <js3q-container data-role="motion-poster"></js3q-container>
-    <js3q-container data-role="sdn-wall"></js3q-container>
-    <js3q-container data-role="display-ad"></js3q-container>
-    <js3q-button data-role="adskip-button">
+<div data-role="sdn-audio-player">
+  <div data-role="sdn-display" class="sdn-display sdn-display-audio">
+    <div data-role="sdn-stats"></div>
+    <div data-role="motion-poster"></div>
+    <div data-role="sdn-wall"></div>
+    <div data-role="display-ad"></div>
+    <button data-role="adskip-button">
       {{skip}}
-    </js3q-button>
-    <js3q-button data-role="sdn-unmute-button"></js3q-button>
+    </button>
+    <button data-role="sdn-unmute-button"></button>
 
     [[context]]
 
-    <js3q-container data-role="channel-label"></js3q-container>
-    <js3q-container data-role="title"></js3q-container>
+    <header class="title">
+      <div data-role="title"></div>
+
+      <div data-role="audio-poster" class="sdn-audio-poster">
+        <img data-role="audio-poster-image" class="sdn-audio-poster-image" onerror="this.style.display='none'"
+          onload="this.style.display='block'">
+      </div>
+    </header>
 
     <video data-role="source-container" class="sdn-source-element sdn-hidden" x-webkit-airplay="allow"
       webkit-playsinline="true" playsinline="true" src=""></video>
 
-    <js3q-container data-role="player-controls">
+    <div data-role="player-controls">
+      <button data-role="pause-button" tooltip="{{tips.play}}" tooltip-position="left" role="button"
+        aria-label="{{tips.play}}"></button>
+      <button data-role="play-button" tooltip="{{tips.pause}}" tooltip-position="left" role="button"
+        aria-label="{{tips.pause}}"></button>
+      <button data-role="play-buffer-overlay">
+        <div data-role="play-buffer-overlay-spinner"></div>
+      </button>
+      <button data-role="back-button" tooltip="{{playlist.playback}}" tooltip-position="left" role="button"
+        aria-label="{{playlist.playback}}"></button>
+      <button data-role="next-button" tooltip="{{playlist.playnext}}" tooltip-position="left" role="button"
+        aria-label="{{playlist.playnext}}"></button>
+      <button data-role="play-minus10-button"></button>
+      <button data-role="play-plus10-button"></button>
+      <button data-role="play-minus15-button"></button>
+      <button data-role="play-plus15-button"></button>
+      <button data-role="volume-button" tooltip="{{tips.mutevolume}}" tooltip-position="left" role="button"
+        aria-label="{{tips.mutevolume}}"></button>
+
+      <div data-role="volume-display-wrapper">
+        <div data-role="volume-display">
+          <div data-role="volume-controls-marker">
+            <js3q-span data-role="volume-controls-thumb"></js3q-span>
+          </div>
+        </div>
+      </div>
+
       [[seekbar]]
-      [[audioControls]]
-    </js3q-container>
+
+      <button data-role="qos-button" tooltip="{{tips.settings}}"></button>
+      <button data-role="cast-button" tooltip="{{tips.cast}}"></button>
+      <button data-role="airplay-button" tooltip="{{tips.airplay}}"></button>
+
+      <span data-role="timeleft-span"></span>
+    </div>
 
     [[qosmenu]]
 
-    <js3q-container data-role="top-chrome">
-      <js3q-container data-role="share-menu">
-        <js3q-container data-role="sidebar-button"></js3q-container>
-      </js3q-container>
-    </js3q-container>
+    <div data-role="chrome"></div>
 
-    <js3q-container data-role="sidebar"></js3q-container>
-
-
-    [[infobar]]
-
-    <js3q-container data-role="audio-poster" class="sdn-audio-poster">
-      <img data-role="audio-poster-image" class="sdn-audio-poster-image" onerror="this.style.display='none'"
-        onload="this.style.display='block'">
-    </js3q-container>
-
-    <js3q-container data-role="playlist"></js3q-container>
-  </js3q-container>
-</js3q-container>
+    <div data-role="playlist"></div>
+  </div>
+</div>
