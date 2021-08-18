@@ -5,7 +5,7 @@ body {
   color: #333;
 }
 
-h1 {
+.page-header {
   text-align: center;
   margin-top: 3rem;
   text-transform: uppercase;
@@ -18,9 +18,12 @@ h1 {
   margin: 3rem auto;
   background: #abc;
   color: #ddd;
-  text-shadow: 0 0 4px #4448;
   border-radius: 0.5rem;
   position: relative;
+
+  > h3 {
+    text-shadow: 0 0 4px #4448;
+  }
 
   // Copy/Pasted from https://css-tricks.com/almanac/properties/b/box-shadow/
   &:before,
