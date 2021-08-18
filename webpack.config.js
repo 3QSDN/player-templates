@@ -13,6 +13,7 @@ module.exports = {
   output: {
     clean: true,
     path: path.resolve(__dirname, 'demo'),
+    assetModuleFilename: 'fonts/[hash][ext]'
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -41,7 +42,11 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ]
-      }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ]
   }
 }
