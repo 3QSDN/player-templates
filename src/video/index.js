@@ -1,3 +1,3 @@
 console.log('ignore me')
 
-import './default.scss'
+import './template.scss'
