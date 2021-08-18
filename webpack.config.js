@@ -20,13 +20,14 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: './src/audio/*.html',
-          to: './audio/[name][ext]'
-        },
-        {
-          from: './src/video/*.html',
-          to: './video/[name][ext]'
-        },
+          from: 'src/**/*.html',
+          to({ absoluteFilename }) {
+            const pathArr = absoluteFilename.split('/src/')
+            const segment = pathArr.pop()
+
+            return segment
+          }
+        }
       ]
     })
   ],
