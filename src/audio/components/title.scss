@@ -1,0 +1,17 @@
+.title {
+  color: $cAccent;
+  font-weight: 900;
+
+  display: flex;
+  justify-content: space-between;
+
+  js3q-span {
+    color: $cText;
+    font-weight: 500;
+  }
+
+  .sdn-audio-poster-image {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+}

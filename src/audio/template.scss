@@ -1,10 +1,32 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@import '../common/styles';
+@import './variables';
+
+[class^='sdnicbsun-'],
+[class*='sdnicbsun-'] {
+  &::before {
+    color: $cText;
+    opacity: 0.65;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+.sdn-display {
+  display: block;
+  max-width: 100%;
+  background-color: $cBackground !important;
+  color: $cText;
+  font-family: 'sdnRobotoCondensed';
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+
+  @import './components/title';
+  @import './components/controls';
+  @import './components/chrome';
+  @import './components/playlist';
 }
 
-/*todo: define styles*/
 #audio-player-timeleft-span {
-  color: darkblue;
+  color: $cText;
 }

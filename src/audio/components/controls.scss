@@ -1,0 +1,8 @@
+[data-role='player-controls'] {
+  display: flex;
+  align-items: center;
+
+  [data-role='seek-bar'] {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,8 @@
+[data-role='chrome'] {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .sdn-button-right {
+    vertical-align: middle;
+  }
+}
