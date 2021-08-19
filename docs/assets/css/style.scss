@@ -13,6 +13,18 @@ body {
   color: #333;
 }
 
+.markdown-body h1 {
+  border: none;
+}
+
+.markdown-body > h1 {
+  display: none;
+}
+
+.markdown-body > .page-header {
+  display: block;
+}
+
 .page-header {
   text-align: center;
   margin-top: 3rem;
