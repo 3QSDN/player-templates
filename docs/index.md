@@ -13,8 +13,8 @@
     skin: 'local',
     tintColor: 'green',
     template: {
-      htmlFile: './audio/template.html',
-      cssFile: './audio/template.css'
+      htmlFile: './assets/audio/template.html',
+      cssFile: './assets/audio/template.css'
     }
   });
 </script>
