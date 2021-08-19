@@ -17,6 +17,10 @@ body {
   border: none;
 }
 
+.markdown-body img {
+  background: none;
+}
+
 .markdown-body > h1 {
   display: none;
 }
