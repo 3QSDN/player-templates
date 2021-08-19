@@ -23,14 +23,20 @@
     <video data-role="source-container" class="sdn-source-element sdn-hidden" x-webkit-airplay="allow"
       webkit-playsinline="true" playsinline="true" src=""></video>
 
+    <div class="seekbar">
+      [[seekbar]]
+    </div>
+
     <div data-role="player-controls">
-      <button data-role="pause-button" tooltip="{{tips.play}}" tooltip-position="left" role="button"
-        aria-label="{{tips.play}}"></button>
-      <button data-role="play-button" tooltip="{{tips.pause}}" tooltip-position="left" role="button"
-        aria-label="{{tips.pause}}"></button>
-      <button data-role="play-buffer-overlay">
-        <div data-role="play-buffer-overlay-spinner"></div>
-      </button>
+      <div class="play-pause-buffer">
+        <button data-role="pause-button" tooltip="{{tips.play}}" tooltip-position="left" role="button"
+          aria-label="{{tips.play}}"></button>
+        <button data-role="play-button" tooltip="{{tips.pause}}" tooltip-position="left" role="button"
+          aria-label="{{tips.pause}}"></button>
+        <button data-role="play-buffer-overlay">
+          <div data-role="play-buffer-overlay-spinner"></div>
+        </button>
+      </div>
       <button data-role="back-button" tooltip="{{playlist.playback}}" tooltip-position="left" role="button"
         aria-label="{{playlist.playback}}"></button>
       <button data-role="next-button" tooltip="{{playlist.playnext}}" tooltip-position="left" role="button"
@@ -49,8 +55,6 @@
           </div>
         </div>
       </div>
-
-      [[seekbar]]
 
       <button data-role="cast-button" tooltip="{{tips.cast}}"></button>
       <button data-role="airplay-button" tooltip="{{tips.airplay}}"></button>

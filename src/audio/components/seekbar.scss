@@ -1,0 +1,46 @@
+.seekbar {
+  [data-role='seek-bar'] {
+    display: block;
+    border-radius: 2px;
+    flex: 1;
+    height: 19px;
+    padding-top: 9px;
+    background: $cLine;
+    background: linear-gradient(
+      transparent,
+      transparent 9px,
+      $cLine 9px,
+      $cLine 11px,
+      transparent 11px
+    );
+    // margin: 0 $gap;
+    cursor: pointer;
+
+    [data-role='scrubber-loaded'] {
+      border-radius: 2px;
+      display: block;
+      justify-content: end;
+      position: relative;
+      width: 0;
+      height: 2px;
+      background-color: $cTint !important;
+
+      [data-role='scrubber-loaded-pointer'] {
+        position: absolute;
+        width: 13px;
+        max-width: 13px;
+        height: 13px;
+        background-color: $cTint;
+        right: -5px;
+        top: -5px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.5s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

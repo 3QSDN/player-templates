@@ -19,18 +19,17 @@
 .sdn-display {
   display: block;
   max-width: 100%;
+  padding: 0.5rem 1rem;
+
   background-color: $cBackground !important;
-  color: $cText;
-  font-family: 'sdnRobotoCondensed';
   border-radius: 0.25rem;
-  padding: 0.5rem;
+  color: $cText;
+
+  font-family: 'sdnRobotoCondensed';
 
   @import './components/title';
+  @import './components/seekbar';
   @import './components/controls';
   @import './components/chrome';
   @import './components/playlist';
-}
-
-#audio-player-timeleft-span {
-  color: $cText;
 }
