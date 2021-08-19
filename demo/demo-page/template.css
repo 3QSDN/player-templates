@@ -1,0 +1,47 @@
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/demo-page/style.scss ***!
+  \*******************************************************************************************************************/
+body {
+  margin: 0;
+  font: 500 100% system-ui, sans-serif;
+  background: #ccc;
+  color: #333;
+}
+
+.page-header {
+  text-align: center;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px #4448;
+}
+
+.card {
+  padding: 1rem 1rem 2rem;
+  max-width: 50rem;
+  margin: 3rem auto;
+  background: #abc;
+  color: #ddd;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.card > h3 {
+  text-shadow: 0 0 4px #4448;
+}
+.card:before, .card:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.card:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
